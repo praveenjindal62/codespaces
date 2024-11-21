@@ -1,3 +1,4 @@
+az config set extension.dynamic_install_allow_preview=true
 az artifacts universal download \
     --organization "https://dev.azure.com/slb-swt/" \
     --feed lightops \
