@@ -1,0 +1,23 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/azure-cli:1": {
+			"installBicep": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/terraform:1": {
+			"installTerraformDocs": true,
+			"version": "latest",
+			"tflint": "latest",
+			"terragrunt": "latest"
+		},
+		"ghcr.io/dhoeric/features/google-cloud-cli:1": {
+			"installGkeGcloudAuthPlugin": true
+		},
+		"ghcr.io/audacioustux/devcontainers/k9s:1": {},
+		"ghcr.io/larsnieuwenhuizen/features/jqyq:0": {}
+	}
+}
