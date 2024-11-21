@@ -1,0 +1,11 @@
+cacheDir: /home/codespace/.lumineer/cache
+gitCredentialsPath: ""
+login:
+  commands:
+    azure:
+      name: az
+      args:
+        - login
+        - --allow-no-subscriptions
+  enabled: true
+userEmail: pjindal@slb.com

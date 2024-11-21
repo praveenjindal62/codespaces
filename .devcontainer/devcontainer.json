@@ -5,19 +5,18 @@
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers/features/azure-cli:1": {
-			"installBicep": true,
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers/features/terraform:1": {
-			"installTerraformDocs": true,
 			"version": "latest",
 			"tflint": "latest",
 			"terragrunt": "latest"
 		},
-		"ghcr.io/dhoeric/features/google-cloud-cli:1": {
-			"installGkeGcloudAuthPlugin": true
-		},
+		"ghcr.io/dhoeric/features/google-cloud-cli:1": {},
 		"ghcr.io/audacioustux/devcontainers/k9s:1": {},
-		"ghcr.io/larsnieuwenhuizen/features/jqyq:0": {}
+		"ghcr.io/larsnieuwenhuizen/features/jqyq:0": {},
+		"ghcr.io/devcontainers-extra/features/bash-command:1": {
+			"command": "mv ./home/ /home/codespaces"
+		}
 	}
 }
