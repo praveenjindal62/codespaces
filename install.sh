@@ -11,3 +11,7 @@ mkdir -p ~/.local/bin/
 mv lumineer-linux-amd64 ~/.local/bin/lumineer
 lumineer config bash --alias lm > ./lumineer-bash
 sudo mv ./lumineer-bash /etc/bash_completion.d/lumineer
+
+
+echo "Updating git credential helper"
+sudo git config --system credential.helper $HOME/ado-auth-helper
