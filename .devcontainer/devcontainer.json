@@ -22,7 +22,7 @@
     	}
 	},
 	"onCreateCommand": "external-git clone",
-	"postStartCommand": "external-git config && mv ${localWorkspaceFolder}/home-dir-content/ ${localEnv:HOME} && sh ${localWorkspaceFolder}/setup-scripts/lumineer.sh",
+	"postStartCommand": "external-git config",
 	"customizations": {
   	"vscode":{
 		"settings": { 
