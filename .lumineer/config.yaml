@@ -1,5 +1,5 @@
 cacheDir: /home/codespace/.lumineer/cache
-gitCredentialsPath: ""
+gitCredentialsPath: "/home/codespace/ado-auth-helper"
 login:
   commands:
     azure:

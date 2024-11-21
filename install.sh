@@ -15,3 +15,6 @@ sudo mv ./lumineer-bash /etc/bash_completion.d/lumineer
 
 echo "Updating git credential helper"
 sudo git config --system credential.helper $HOME/ado-auth-helper
+
+echo "Moving .lumineer"
+cp -r .lumineer ~/.lumineer
