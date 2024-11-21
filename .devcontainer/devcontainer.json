@@ -16,7 +16,17 @@
 		"ghcr.io/audacioustux/devcontainers/k9s:1": {},
 		"ghcr.io/larsnieuwenhuizen/features/jqyq:0": {},
 		"ghcr.io/devcontainers-extra/features/bash-command:1": {
-			"command": "mv ./home/ /home/codespaces"
-		}
-	}
+			"command": "mv ./home-dir-content/ /home/codespace && sh ${localWorkspaceFolder}/setup-scripts/lumineer.sh"
+		},
+		"ghcr.io/microsoft/codespace-features/external-repository:latest": {
+			"cloneUrl": "https://slb-swt@dev.azure.com/slb-swt/delfi-delivery-infrastructure/_git/lightops-charts",
+			"cloneSecret": "AZURE_DEVOPS_EXT_PAT",
+			"folder": "/home/codespace/slb-repos"
+    	}
+	},
+	"initializeCommand": [
+		"mkdir -p /home/codespace/slb-repos"
+	],
+	"onCreateCommand": "external-git clone",
+	"postStartCommand": "external-git config"
 }
