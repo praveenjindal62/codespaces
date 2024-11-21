@@ -21,12 +21,12 @@
 		"ghcr.io/microsoft/codespace-features/external-repository:latest": {
 			"cloneUrl": "https://slb-swt@dev.azure.com/slb-swt/delfi-delivery-infrastructure/_git/lightops-charts",
 			"cloneSecret": "AZURE_DEVOPS_EXT_PAT",
-			"folder": "/home/codespace/slb-repos"
+			"folder": "/workspaces/slb-repos"
     	}
 	},
 	"initializeCommand": [
-		"mkdir -p /home/codespace/slb-repos"
+		"mkdir -p /workspaces/slb-repos"
 	],
 	"onCreateCommand": "external-git clone",
-	"postStartCommand": "external-git config"
+	"postStartCommand": "external-git config && mv ${localWorkspaceFolder}/home-dir-content/ ${localEnv:HOME} && sh ${localWorkspaceFolder}/setup-scripts/lumineer.sh"
 }
