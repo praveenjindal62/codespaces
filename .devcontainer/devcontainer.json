@@ -18,7 +18,7 @@
 		"ghcr.io/microsoft/codespace-features/external-repository:latest": {
 			"cloneUrl": "https://slb-swt@dev.azure.com/slb-swt/delfi-delivery-infrastructure/_git/lightops-charts",
 			"cloneSecret": "AZURE_DEVOPS_EXT_PAT",
-			"folder": "/workspaces/slb-repos"
+			"folder": "/workspaces/slb-repos/lightops-charts"
     	}
 	},
 	"onCreateCommand": "external-git clone",
